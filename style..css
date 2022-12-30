@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.iceCream{
+    position: absolute;
+width: 100%;
+height: 100vh;
+background-color: white;
+
+
+}
+.full-ice{
+    position: relative;
+    width: 150px;
+    top: 100px;
+    height: 250px;
+    left: 90px;
+    border-radius:15px;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    z-index: 7;
+    background-color: #ffb1a7;
+}
+.small-bite{
+    width: 25px;
+    position: relative;
+    top:13px ;
+    left: 10px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+}
+.big-bite{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    left: 23px;
+    top: -34px;
+}
+.shade{
+    width: 100px;
+    position: absolute;
+    height: 110px;
+    
+}
+.ice-shade1{
+    width: 30px;
+    height: 110px;
+    position: relative;
+    left: 30px;
+    border-radius: 10px;
+    background-color: #ffa79c;
+}
+.ice-shade2{
+    width: 30px;
+    height: 110px;
+    position: relative;
+    left: 90px;
+    top: -110px;
+    border-radius: 10px;
+    background-color: #ffa79c;
+}
+.ice-face{
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    top:180px;
+    left: 25px;
+}
+.ice-eye1{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: relative;
+    left:15px ;
+    top: 16px;
+    margin-top: 0;
+    background-color: #ed9c93;
+    animation: blink 2.5s infinite ;
+}
+.ice-eye2{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: relative;
+    left:75px ;
+    top: 7px;
+    margin-top: 0;
+    animation: blink 2.5s infinite ;
+    background-color: #ed9c93;
+}
+.ice-mouth{
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    left: 35px;
+    top: 35px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: #ed9c93;
+}
+.ice-toung{
+    position: relative;
+    width: 20px;
+    height: 11px;
+    top: 4px;
+    left: 5px;
+    border-top-left-radius: 90%;
+    border-top-right-radius: 90%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    background-color: #ffc5be;
+}
+.melting{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+.melting-part1{
+    width: 10px;
+    height: 50px;
+    left: 107px;
+    top: 185px;
+    position: relative;
+    z-index:5 ;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    background-color: rgb(255, 255, 255);
+}
+.melting-part2{
+    width: 11px;
+    height: 40px;
+    top: 135px;
+    left: 115px;
+    position: relative;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 50%;
+
+    background-color: #ffb1a7;
+}
+.melting-part3{
+    width: 13px;
+    height: 40px;
+    left: 137px;
+    top: 80px;
+    position: relative;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 55%;
+    background-color: #ffb1a7;
+}
+.melting-part4{
+    width: 13px;
+    height: 25px;
+    left: 126px;
+    top: 58px;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 30%;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+}
+.melting-part5{
+    width: 20px;
+    height: 10px;
+    left: 120px;
+    top: 29px;
+    position: relative;
+    background-color: #ffb1a7;
+}
+.ice-ball1{
+position: relative;
+width: 9px;
+height: 9px;
+border-radius: 50%;
+background-color: #ffb1a7;
+left: 117px;
+top: 170px;
+z-index: 8;
+animation: drop 3s infinite linear;
+}
+.ice-ball2{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    left: 140px;
+    top: 100px;
+    border-radius: 50%;
+    background-color:#ffb1a7;
+    animation: drop 3s infinite linear;
+    }
+.stick{
+    width: 30px;
+    height: 110px;
+    position: relative;
+    background-color: #ffd9af;
+    border-radius: 50px;
+    left: 60px;
+    top: 90px;
+    z-index: 6;
+}
+.melted-ice{
+    width: 40px;
+    height: 15px;
+    position: relative;
+    top: 275px;
+    left: 115px;
+    background-color: #ffb1a7;
+    border-radius: 50%;
+    animation: ice 3s infinite ;
+}
+.stick-shadow{
+    width: 60px;
+    height: 17px;
+    background-color: #e9ebea;
+    position: relative;
+    left: 145px;
+    top: 80px;
+    z-index: 1;
+    border-radius: 50%;
+    
+}
+.message {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    margin-top: 80px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color: #ffb1a7;
+    font-family: 'Jua', sans-serif;
+ }
+.message h1 {
+      font-style: normal;
+      font-size: 75px;
+      margin-bottom: 0;
+      white-space: nowrap; 
+    }
+.message h2 {
+      margin: 0;
+      font-size: 20px;
+      text-align: center;
+      white-space: nowrap; 
+    }
+.message h2 a {
+        color: #ffd9af;
+         
+    }
+.message h2 a:hover {
+          opacity: 0.5; }
+  
+
+@keyframes blink{
+   0%,80%,94%,100%{
+    height: 10px;
+    margin-top: 0;
+    
+   }
+   91%,97%{
+    height: 0px;
+    margin-top: 7px;
+    
+    
+   }
+}
+@keyframes drop{
+    0%,65%{
+        top: 170px;
+    }
+    100%{
+        top: 255px;
+    }
+}
+@keyframes ice{
+    0%,65%,70%,80%,90%{
+        width: 40px;
+        left: 115px;
+    }
+    
+    100%{
+        width: 45px;
+        left: 111px;
+    }
+}
+@media screen and (min-width: 300px) {
+    .full-ice{
+        left: 100px;
+    }
+    .stick{
+        left: 160px;
+    }
+    
+}
+@media screen and (min-width: 375px) {
+    .full-ice{
+        left: 100px;
+    }
+    .stick{
+        left: 160px;
+    }
+}
+@media screen and (min-width: 480px) {
+    .full-ice{
+        left: 150px;
+    }
+    .stick{
+        left: 210px;
+    }
+    .stick-shadow{
+        left: 195px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .full-ice{
+        left: 300px;
+    }
+    .stick{
+        left: 360px;
+    }
+    .stick-shadow{
+        left: 345px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .full-ice{
+        left: 440px;
+    }
+    .stick{
+        left: 500px;
+    }
+    .stick-shadow{
+        left: 485px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .full-ice{
+        left: 640px;
+    }
+    .stick{
+        left: 700px;
+    }
+    .stick-shadow{
+        left: 685px;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .full-ice{
+        left: 690px;
+    }
+    .stick{
+        left: 750px;
+    }
+    .stick-shadow{
+        left: 735px;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .full-ice{
+        left: 900px;
+    }
+    .stick{
+        left: 960px;
+    }
+    .stick-shadow{
+        left: 945px;
+    }
+}
